@@ -5,9 +5,9 @@ function Header(props) {
     useEffect(() => {
     }, []);
     return (
-        <nav>
-            <div>
-                hahaha
+        <nav className="navbar">
+            <div className="navbar__content">
+                hahah
             </div>
         </nav>
     );
