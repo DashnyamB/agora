@@ -25,3 +25,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.wrapper {
+    padding: 0 5px;
+    @include atSmall {
+        padding: 0 20px;
+    }
+    @include atMedium {
+        padding: 0 50px;
+    }
+    @include atLarge {
+        padding: 0 8rem;
+    }
+}
