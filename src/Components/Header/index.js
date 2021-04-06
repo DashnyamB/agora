@@ -7,8 +7,10 @@ function Header(props) {
     }, []);
     return (
         <nav className="header wrapper">
-            <HamburgerMenu />
+            <p>Агора-д тавтай морил. Наймаа бол бидний урлаг.</p>
+            
             <div className="header_content">
+                <HamburgerMenu />
                 hahah
             </div>
         </nav>
