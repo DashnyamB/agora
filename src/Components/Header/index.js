@@ -1,6 +1,9 @@
-import { Search } from "@material-ui/icons";
 import React, { useEffect } from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import Logo from "./Logo";
+import MenuItem from "./MenuItem";
+import MobileMenu from "./MobileMenu";
+import Search from "./Search";
 import "./style.scss";
 
 function Header(props) {
@@ -9,12 +12,13 @@ function Header(props) {
     return (
         <nav className="header wrapper">
             <p>Агора-д тавтай морил. Наймаа бол бидний урлаг.</p>
-            
+
             <div className="header__content">
                 <HamburgerMenu />
-                {/* <Logo />
-                <Search /> */}
-                hahah
+                {/* <MobileMenu /> */}
+                <Logo />
+                <Search />
+                <MenuItem />
             </div>
         </nav>
     );

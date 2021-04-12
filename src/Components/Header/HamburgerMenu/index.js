@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
-import MenuItems from "../MenuItem"
+import MobileMenuItems from "../MobileMenu/MobileMenuItems"
 import { Menu } from '@material-ui/core';
 import "./style.scss";
 
@@ -22,6 +22,7 @@ const categoryItems = [
 
 function HamburgerMenu(props) {
     const [currentState, setcurrentState] = React.useState(null);
+
     const handleClick = (event) => {
         setcurrentState(event.currentTarget);
     };
@@ -45,7 +46,7 @@ function HamburgerMenu(props) {
                 onClose={handleClose}
             >
                 {categoryItems.map((category) => (
-                    <MenuItems key={category} text={category} />
+                    <MobileMenuItems key={category} text={category} />
                 ))}
             </Menu>
         </div>

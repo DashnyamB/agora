@@ -1,12 +1,13 @@
-import { React } from "react";
-import "./style.scss";
+import React from 'react';
+import MenuItems from '../MenuItems';
 
-const MenuItems = (props) => {
+function MenuItem(props) {
     return (
-        <div onClick={props.onClick} className="">
-            {props.text}
+        <div>
+            <MenuItems />
+            haha
         </div>
-    )
+    );
 }
 
-export default MenuItems
+export default MenuItem;
