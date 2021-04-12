@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
-import MenuItem from "../MenuItem"
+import MenuItems from "../MenuItem"
 import { Menu } from '@material-ui/core';
 import "./style.scss";
 
@@ -45,7 +45,7 @@ function HamburgerMenu(props) {
                 onClose={handleClose}
             >
                 {categoryItems.map((category) => (
-                    <MenuItem key={category} text={category} />
+                    <MenuItems key={category} text={category} />
                 ))}
             </Menu>
         </div>

@@ -1,7 +1,7 @@
 import { React } from "react";
 import "./style.scss";
 
-const MenuItem = (props) => {
+const MenuItems = (props) => {
     return (
         <div onClick={props.onClick} className="">
             {props.text}
@@ -9,4 +9,4 @@ const MenuItem = (props) => {
     )
 }
 
-export default MenuItem
+export default MenuItems
